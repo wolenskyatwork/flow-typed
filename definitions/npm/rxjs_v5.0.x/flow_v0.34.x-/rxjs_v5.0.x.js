@@ -1463,6 +1463,7 @@ declare class rxjs$Observable<+T> {
 declare class rxjs$ConnectableObservable<T> extends rxjs$Observable<T> {
   connect(): rxjs$Subscription;
   refCount(): rxjs$Observable<T>;
+  getSubject(): rxjs$Observable<T>;
 }
 
 declare class rxjs$GroupedObservable<K, V> extends rxjs$Observable<V> {
